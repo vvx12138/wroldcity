@@ -5,7 +5,7 @@ import streamlit as st
 
 
 st.title('World Cities')
-df = pd.read_csv('worldcities.csv')
+df = pd.read_csv('d:/ml4biz/my-streamlit/worldcities.csv')
 
 # note that you have to use 0.0 and 40.0 given that the data type of population is float
 population_filter = st.slider('Minimal Population (Millions):', 0.0, 40.0, 3.6)  # min, max, default
